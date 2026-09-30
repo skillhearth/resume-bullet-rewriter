@@ -2,7 +2,7 @@
 
 A free skill (a `SKILL.md` file plus reference files) that rewrites the resume/CV bullet points you paste into clearer, more specific versions, without inventing anything.
 
-Made by SkillHearth.
+Made by SkillHearth. More: https://skillhearth.github.io/
 
 ## What it does
 
