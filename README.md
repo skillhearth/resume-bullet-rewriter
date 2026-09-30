@@ -22,7 +22,9 @@ Made by SkillHearth.
 2. Copy the skill folder (`resume-bullet-rewriter/`, containing `SKILL.md`, `references/` and `LICENSE`) into the skills location of your agent.
 3. Start a new session and paste your bullets. Optionally say which role you are targeting.
 
-The exact skills location depends on your agent; check its documentation.
+Alternatively, run `npx skills add skillhearth/resume-bullet-rewriter`. Observed in our test: it found the skill in the subfolder and copied it to `.agents/skills/resume-bullet-rewriter`.
+
+Skills folder locations differ between tools and versions; check the documentation of the tool you use for where it reads skills from.
 
 ## Example (FICTIONAL — invented for illustration only)
 
