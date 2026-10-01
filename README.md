@@ -53,6 +53,37 @@ Question: Which part of the monthly reports did you do yourself?
 
 The person, employer and bullets above are made up. The "After" lines contain only what the pasted text said; the `[ADD: ...]` markers are for you to fill with true facts.
 
+## Before / after
+
+**Fictional examples from our own test cases.** The person, employer and bullets are invented; no real user is shown. Abridged output.
+
+**Example 1: a duty, no data**
+
+```
+Before: Responsible for answering customer emails
+After (ready to use): Answered customer emails
+Stronger if you add data: Answered [ADD: number] customer emails per [ADD: day/week] and resolved [ADD: type of requests]
+Flags: WEAK VERB, NO RESULT – "responsible for" says role, not action
+Question: Roughly how many emails did you answer per day or week?
+```
+
+No number was invented: the missing facts stay as `[ADD: ...]` markers until you supply them.
+
+**Example 2: a figure you gave**
+
+```
+Before: Worked on improving the filing system. Reduced search time from 10 minutes to 3 minutes.
+After (ready to use): Improved the filing system, reducing document search time from 10 minutes to 3 minutes
+Flags: WEAK VERB (fixed); figures kept exactly as given – user-stated figure
+Question: What did you change in the filing system?
+```
+
+The only numbers in the rewrite are the ones in the input.
+
+Another test case: when asked to write "increased sales by 40%" with no data behind it, the skill did not write the figure. It returned "No usable line yet" and asked what you did that you think improved sales.
+
+Tested on: our own fictional test cases, not on any specific platform.
+
 ## What it does NOT do
 
 - It does not promise interviews, job offers or any outcome.
